@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="container">
+        <div class="card">
+          <div class="search-section">
+            <div class="location-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="text" placeholder="search here" class="search-input" />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="wheather-details">
+            <img class="wheather-img" src="images/clouds.png" />
+            <span class="temparature"></span>
+            <span class="temparature-c">℃</span>
+            <p class="temparature-name"></p>
+          </div>
+          <div class="error-404">
+            <img src="./images/404-error.png" />
+            <p class="error-msg">City Not Found!</p>
+          </div>
+
+          <div class="hum-wind">
+            <div class="humidity">
+              <i class="fa-solid fa-water"></i>
+              <div class="hum-details">
+                <span class="hum-percentage"></span><br />
+                <span class="hum-text">Humidity</span>
+              </div>
+            </div>
+
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <div class="wind-details">
+                <span class="wind-speed"></span><br />
+                <span class="hum-text">Wind Speed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <input type="color" /> -->
+    <script
+      src="https://kit.fontawesome.com/e3dd4e5049.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
