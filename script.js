@@ -2,11 +2,9 @@ const searchBtn = document.querySelector(".search-btn");
 const searchInput = document.querySelector(".search-input");
 const container = document.querySelector(".container");
 const weatherDetails = document.querySelector(".wheather-details");
-// const weatherDetailsImg = document.querySelector(".wheather-img");
 const humWind = document.querySelector(".hum-wind");
 const apiKey = `c291dc923f5927d31e69cf33a772b554`;
 const error404Msg = document.querySelector(".error-404");
-// const city = `hyderabad`;
 
 function createAPIURL() {
   let city = searchInput.value;
@@ -31,7 +29,7 @@ searchInput.addEventListener("keyup", (event) => {
 async function checkWheather(apiURL) {
   const response = await fetch(apiURL);
   let data = await response.json();
-  console.log(data);
+  // console.log(data);
 
   if (data.cod == "404") {
     weatherDetails.style.display = "none";
